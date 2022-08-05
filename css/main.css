@@ -1,0 +1,146 @@
+main{
+    flex-grow: 1;
+    display: flex;
+}
+
+.content-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.content-container h1{
+    font-size: 7rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;  
+}
+
+.content-container h1 span{
+    font-size: 2rem;
+   font-weight: 200;
+   transform: translateY(30px);
+}
+
+.movie-title{
+    font-size: 2.6rem;
+    font-style: italic;
+    color: #e62721;
+    transform: translateY(-20px);
+}
+
+.movie-text{
+    width: 550px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.movie-button{
+    color: #fff;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #e62721;
+    text-decoration: none;
+    margin-top: 30px;
+    box-shadow: -2px 3px #b11914
+}
+
+.social-container {
+    width: 48px;
+    
+}
+
+.social-container ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.social-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.social-container li{
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #fff
+}
+
+.social-container i{
+    font-size: 1.5rem;
+}
+
+.social-container li:hover{
+    background-color: #e62721;
+    border-color: #e62721;
+    transition: all 0.7s;
+}
+
+@media(max-width: 768px){
+    .content-container{
+        justify-content: flex-end;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    .content-container h1{
+        font-size: 4rem;
+    }
+    .content-container h1 span{
+        font: 1.5rem;
+        transform: translateY(15px);
+    }
+    .movie-title{
+        font-size: 1.45rem;
+        transform: translateY(15px);
+    }
+    .social-container {
+        display: none;
+    }
+    .movie-text{
+        display: none;
+    }
+}
+
+
+@media (width: 320px){
+    .content-container{
+        justify-content: flex-end;
+        margin-bottom: 50px;
+    }
+    .content-container h1{
+        font-size: 3rem;
+    }
+    .content-container h1 span{
+        font: 0.5rem;
+        transform: translateY(15px);
+    }
+    .movie-title{
+        font-size: 1.1rem;
+        transform: translateY(2px);
+    }
+    .social-container {
+        display: none;
+    }
+    .movie-text{
+        display: none;
+    }
+    .movie-button{
+        width: 250px;
+        font-size: 1.3rem;
+    }
+}
