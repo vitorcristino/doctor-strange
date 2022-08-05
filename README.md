@@ -1,1 +1,4 @@
-# doctor-strange
+# Landing Page - Doctor Strange
+
+- Layout Responsivo
+
